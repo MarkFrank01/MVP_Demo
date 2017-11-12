@@ -20,4 +20,5 @@
         <activity android:name=".main.MainActivity"/>
     </application>
 
+
 </manifest>
