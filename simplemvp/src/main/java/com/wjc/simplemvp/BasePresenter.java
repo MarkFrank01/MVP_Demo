@@ -10,6 +10,6 @@ package com.wjc.simplemvp;
 
 public interface BasePresenter {
 
-    void onDestory();
+    void onDestroy();
 
 }

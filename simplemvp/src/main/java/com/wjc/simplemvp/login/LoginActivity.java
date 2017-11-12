@@ -1,9 +1,9 @@
-
 package com.wjc.simplemvp.login;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -11,15 +11,23 @@ import android.widget.ProgressBar;
 import com.wjc.simplemvp.R;
 import com.wjc.simplemvp.main.MainActivity;
 
+/**
+ * Project_NAME : MVPandView_Demo
+ * Package_NAME : com.wjc.simplemvp.login
+ * File_NAME : LoginActivity
+ * Created by WJC on 2017/11/12 16:57
+ * Describe : TODO
+ */
 
-public class LoginActivity extends Activity implements LoginView, View.OnClickListener {
+public class LoginActivity extends AppCompatActivity implements LoginContract.View, View.OnClickListener {
 
     private ProgressBar progressBar;
     private EditText username;
     private EditText password;
-    private LoginPresenter presenter;
+    private LoginContract.Presenter presenter;
 
-    @Override protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
@@ -28,12 +36,18 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
         password = (EditText) findViewById(R.id.password);
         findViewById(R.id.button).setOnClickListener(this);
 
-        presenter = new LoginPresenterImpl(this);
+        new LoginPresenter(this);
+
     }
 
     @Override protected void onDestroy() {
         presenter.onDestroy();
         super.onDestroy();
+    }
+
+    @Override
+    public void setPresenter(LoginContract.Presenter presenter) {
+        this.presenter = presenter;
     }
 
     @Override public void showProgress() {
