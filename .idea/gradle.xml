@@ -8,9 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DEMO" />
             <option value="$PROJECT_DIR$/Dagger_MvpDemo" />
             <option value="$PROJECT_DIR$/Demo2" />
             <option value="$PROJECT_DIR$/Demo3" />
+            <option value="$PROJECT_DIR$/Demo4" />
             <option value="$PROJECT_DIR$/simplemvp" />
           </set>
         </option>

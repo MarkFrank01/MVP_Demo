@@ -1,1 +1,1 @@
-include ':Demo2', ':Demo3', ':Dagger_MvpDemo', ':simplemvp'
+include ':Demo2', ':Demo3', ':Dagger_MvpDemo', ':simplemvp', ':Demo4', ':DEMO'
