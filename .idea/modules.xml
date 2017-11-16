@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DEMO/DEMO.iml" filepath="$PROJECT_DIR$/DEMO/DEMO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dagger_MvpDemo/Dagger_MvpDemo.iml" filepath="$PROJECT_DIR$/Dagger_MvpDemo/Dagger_MvpDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo2/Demo2.iml" filepath="$PROJECT_DIR$/Demo2/Demo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo3/Demo3.iml" filepath="$PROJECT_DIR$/Demo3/Demo3.iml" />
